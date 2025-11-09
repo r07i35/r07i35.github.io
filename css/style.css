@@ -1,0 +1,159 @@
+@charset "utf-8";
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+button {
+	color: #000000;
+  background-color: #f5f5f5;
+	border: none;
+	border-radius: 5px;
+	margin: 2px;
+}
+tr {
+	margin: 0;
+	padding: 0;
+}
+td {
+	margin: 0;
+	padding: 0;
+}
+button:hover{
+    background-color: #f2f2f2;
+}
+#main {
+	width: 100%;
+	height: 100%;
+}
+#open-overlay-btn {
+	margin-top: 10px;
+	margin-left: 10px;
+	font-weight: 500;
+}
+#clear-list-btn {
+	display: flex;
+	width: fit-content;
+	margin: 10px;
+}
+#store-as-url-btn {
+	display: flex;
+	width: fit-content;
+	margin: 10px;
+}
+#check-list {
+	width: 100%;
+	text-align: left;
+}
+.select-box, .select-box-in-list {
+	display: flex;
+	justify-content: left;
+	margin-block: 20px;
+	gap: 10px;
+}
+.filtering-box {
+	display: flex;
+	justify-content: left;
+	margin-block: 25px;
+	margin-left: 2px;
+	gap: 10px;
+}
+.select-box input[type="radio"], .select-box-in-list input[type="radio"] {
+	position: absolute;
+	white-space: nowrap;
+	border: 0;
+	clip-path: inset(50%);
+	overflow: hidden;
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+}
+.select-box label, .select-box-in-list label {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-size: 12px;
+	background-color: #dddddd;
+	border: 3px solid #dddddd;
+	color: #ffffff;
+	aspect-ratio: 2 / 1;
+	width: 80px;
+	cursor: pointer;
+}
+.filtering-box input[type="checkbox"] {
+	position: absolute;
+	white-space: nowrap;
+	border: 0;
+	clip-path: inset(50%);
+	overflow: hidden;
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+}
+.filtering-box label {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-size: 12px;
+	background-color: #dddddd;
+	border: 3px solid #dddddd;
+	color: #ffffff;
+	aspect-ratio: 2 / 1;
+	width: 60px;
+	cursor: pointer;
+}
+.select-box input[type="radio"]:checked,
+.select-box-in-list input[type="radio"]:checked,
+.filtering-box input[type="radio"]:checked {
+	cursor: pointer;
+}
+.select-box label:has(input[value="notsubmitted"]:checked),
+.select-box-in-list label:has(input[value="notsubmitted"]:checked),
+.filtering-box label:has(input[value="notsubmitted"]:checked) {
+	background-color: #8a8a8a;
+	border-color: #8a8a8a;
+}
+.select-box label:has(input[value="submitting"]:checked),
+.select-box-in-list label:has(input[value="submitting"]:checked),
+.filtering-box label:has(input[value="submitting"]:checked) {
+	background-color: #87ff54;
+	border-color: #87ff54;
+}
+.select-box label:has(input[value="submitted"]:checked),
+.select-box-in-list label:has(input[value="submitted"]:checked),
+.filtering-box label:has(input[value="submitted"]:checked) {
+	background-color: #54d4ff;
+	border-color: #54d4ff;
+}
+.select-box label:has(input[value="forgets"]:checked),
+.select-box-in-list label:has(input[value="forgets"]:checked),
+.filtering-box label:has(input[value="forgets"]:checked) {
+	background-color: #ffcc54;
+	border-color: #ffcc54;
+}
+
+.input-key {
+	width: 50px;
+	aspect-ratio: 1 / 1;
+}
+.keys {
+	border-spacing: 0;
+	padding: 0;
+}
+
+#page-top-btn {
+	position: fixed;
+	bottom: 5px;
+	right: 5px;
+	opacity: 0;
+}
+
+.alert {
+	color: #ff0000;
+	visibility: hidden;
+}
