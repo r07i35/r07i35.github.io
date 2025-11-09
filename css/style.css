@@ -144,16 +144,18 @@ button:hover{
 	background-color: #ffcc54;
 	border-color: #ffcc54;
 }
-
 .input-key {
 	width: 75px;
 	aspect-ratio: 1 / 1;
+}
+#increment-key {
+	width: 154px;
+	height: 75px;
 }
 .keys {
 	border-spacing: 0;
 	padding: 0;
 }
-
 .delete-list {
 	display: inline-block;
 	width: 30px;
