@@ -13,6 +13,7 @@
         <meta http-equiv="default-style" content="sample.css"> -->
         <title>CheckList</title>
         <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js" defer></script>
     </head>
     <body>
         <h1>チェックリスト</h1>
@@ -34,13 +35,13 @@
                     <td><p class="overlay-input">~</p></td>
                     <td><label>最大値: <input id="max-index" class="overlay-input" type="number" value="" min="0" inputmode="numeric"></label></td>
                 </tr>
-                <tr>
-                    <td><button id="add-to-list-btn" class="overlay-button">Add to list</button></td>
-                    <td colspan="3"><p id="zero-or-less-alert" class="alert">0以下は指定出来ません</p></td>
-                </tr>
             </table>
-            <button id="clear-list-btn">clear</button>
-            <button id="store-as-url-btn">URLに保存する</button>
+            <div class="flex-box">
+                <button type="button" id="add-to-list-btn" class="overlay-button">Add to list</button>
+                <p id="zero-or-less-alert" class="alert">0以下は指定出来ません</p>
+            </div>
+            <button type="button" id="clear-list-btn">clear</button>
+            <button type="button" id="store-as-url-btn">URLに保存する</button>
             <div class="prompt-box">
                 <h2>ステータス変更</h2>
                 <table>
@@ -60,28 +61,28 @@
                 <label><input class="select-editmode" type="radio" name="select-editmode" value="cleareverytime">毎回リセットする</label>
                 <table class="keys">
                     <tr>
-                        <td><button id="increment-key" class="input-key" value="increment">+</button></td>
-                        <td><button id="decrement-key" class="input-key" value="decrement">-</button></td>
+                        <td><button type="button" id="increment-key" class="input-key" value="increment">+</button></td>
+                        <td><button type="button" id="decrement-key" class="input-key" value="decrement">-</button></td>
                     </tr>
                     <tr>
-                        <td><button class="input-key" value="7">7</button></td>
-                        <td><button class="input-key" value="8">8</button></td>
-                        <td><button class="input-key" value="9">9</button></td>
+                        <td><button type="button" class="input-key" value="7">7</button></td>
+                        <td><button type="button" class="input-key" value="8">8</button></td>
+                        <td><button type="button" class="input-key" value="9">9</button></td>
                     </tr>
                     <tr>
-                        <td><button class="input-key" value="4">4</button></td>
-                        <td><button class="input-key" value="5">5</button></td>
-                        <td><button class="input-key" value="6">6</button></td>
+                        <td><button type="button" class="input-key" value="4">4</button></td>
+                        <td><button type="button" class="input-key" value="5">5</button></td>
+                        <td><button type="button" class="input-key" value="6">6</button></td>
                     </tr>
                     <tr>
-                        <td><button class="input-key" value="1">1</button></td>
-                        <td><button class="input-key" value="2">2</button></td>
-                        <td><button class="input-key" value="3">3</button></td>
+                        <td><button type="button" class="input-key" value="1">1</button></td>
+                        <td><button type="button" class="input-key" value="2">2</button></td>
+                        <td><button type="button" class="input-key" value="3">3</button></td>
                     </tr>
                     <tr>
-                        <td><button class="input-key" value="clear">C</button></td>
-                        <td><button class="input-key" value="0">0</button></td>
-                        <td><button class="input-key" value="enter">=></button></td>
+                        <td><button type="button" class="input-key" value="clear">C</button></td>
+                        <td><button type="button" class="input-key" value="0">0</button></td>
+                        <td><button type="button" class="input-key" value="enter">=></button></td>
                     </tr>
                 </table>
                 <p id="no-matching-list-alert" class="alert">該当するリストがありません</p>
@@ -102,8 +103,7 @@
                 </thead>
                 <tbody></tbody>
             </table>
-            <button id="page-top-btn">トップに戻る</button>
+            <button type="button" id="page-top-btn">↑</button>
         </div>
-        <script src="js/script.js"></script>
     </body>
 </html>
