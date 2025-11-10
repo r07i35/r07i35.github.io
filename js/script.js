@@ -1,6 +1,5 @@
 let scrollPosition;
 const main = document.getElementById("main");
-const overlayOpenBtn = document.getElementById("open-overlay-btn");
 const clearListBtn = document.getElementById("clear-list-btn");
 const storeList = document.getElementById("store-as-url-btn");
 const filteringStatus = document.getElementsByClassName("filtering-status");
@@ -351,3 +350,4 @@ addToListBtn.addEventListener('click', () => {
 		}
 	}
 });
+
