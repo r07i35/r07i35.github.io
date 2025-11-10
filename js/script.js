@@ -1,5 +1,7 @@
 let scrollPosition;
 const main = document.getElementById("main");
+const inputTabName = document.getElementById("input-tab-name");
+const changeTabName = document.getElementById("change-tab-name");
 const clearListBtn = document.getElementById("clear-list-btn");
 const storeList = document.getElementById("store-as-url-btn");
 const filteringStatus = document.getElementsByClassName("filtering-status");
@@ -259,6 +261,9 @@ function expandFromURL() {
 
 window.addEventListener('load', expandFromURL);
 window.addEventListener('load', loadDisplay);
+changeTabName.addEventListener('click', () => {
+	document.title = inputTabName.value;
+});
 storeList.addEventListener('click', storeAsURL);
 for(let i = 0; i < statusList.length; ++i){
 	filteringStatus[i].addEventListener('click', filteringList);
@@ -350,4 +355,5 @@ addToListBtn.addEventListener('click', () => {
 		}
 	}
 });
+
 
